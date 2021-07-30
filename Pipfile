@@ -9,6 +9,7 @@ sqlalchemy = "*"
 flask-sqlalchemy = "*"
 pymysql = "*"
 flask-migrate = "*"
+flask-restful = "*"
 
 [dev-packages]
 
@@ -20,5 +21,3 @@ start = "python src/run.py"
 db_migrate = "bash -c 'cd src && flask db migrate'"
 db_upgrade = "bash -c 'cd src && flask db upgrade'"
 db_downgrade = "bash -c 'cd src && flask db downgrade'"
-
-
