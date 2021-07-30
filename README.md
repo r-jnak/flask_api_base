@@ -11,7 +11,7 @@ pipenv sync --dev
 ```
 ### migrationファイルの作成
 ```
-pipenv run db migrate
+pipenv run db_migrate
 ```
 ### migrationの実行
 ```
