@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+sqlalchemy = "*"
+flask-sqlalchemy = "*"
+pymysql = "*"
+flask-migrate = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+start = "python src/run.py"
+db_migrate = "bash -c 'cd src && flask db migrate'"
+db_upgrade = "bash -c 'cd src && flask db upgrade'"
+db_downgrade = "bash -c 'cd src && flask db downgrade'"
+
+
